@@ -38,7 +38,9 @@ sudo dpkg -i thingsboard-3.0.1.deb
 
 ### Step 3. Configure ThingsBoard database
 
-{% include templates/install/ubuntu-db-postgresql.md %}
+{% include templates/install/postgres-install-ubuntu.md %}
+If you have problems when installing from the standard repository, you can use the option to install from source, below is an example of installing version 12 of PostgreSQL. Please make a backup.
+{% include templates/install/build-postgresql-from-sources.md %}
 
 ### Step 4. Choose ThingsBoard queue service
 
